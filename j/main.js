@@ -45,8 +45,8 @@ function changeSlide(e) {
     }
     
     // deactivate current image
-    showing.classList.toggle("hide");
-    showing.classList.toggle("current");
+    showing.classList.add("hide");
+    showing.classList.remove("current");
     
     //make sure next image is there
     if (!nextUp) {
@@ -58,6 +58,6 @@ function changeSlide(e) {
     }
   
     // activate next image
-    nextUp.classList.toggle("hide");
-    nextUp.classList.toggle("current");
+    nextUp.classList.remove("hide");
+    nextUp.classList.add("current");
   }
